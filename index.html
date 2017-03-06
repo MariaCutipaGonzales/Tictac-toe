@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic tac toe</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <h1>Tic tac toe</h1>
+  <table>
+    <tr>
+      <td><input type="button" class="tic" id="btn1" onclick="eventButtons('btn1')"></td>
+      <td><input type="button" class="tic" id="btn2" onclick="eventButtons('btn2')"></td>
+      <td><input type="button" class="tic" id="btn3" onclick="eventButtons('btn3')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="tic" id="btn4" onclick="eventButtons('btn4')"></td>
+      <td><input type="button" class="tic" id="btn5" onclick="eventButtons('btn5')"></td>
+      <td><input type="button" class="tic" id="btn6" onclick="eventButtons('btn6')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class="tic" id="btn7" onclick="eventButtons('btn7')"></td>
+      <td><input type="button" class="tic" id="btn8" onclick="eventButtons('btn8')"></td>
+      <td><input type="button" class="tic" id="btn9" onclick="eventButtons('btn9')"></td>
+    </tr>
+ </table>
+  <center>
+       <input type="submit" id="reset" value="Nuevo Juego" onclick="clearButtons()">
+  <h3>Turno de:<span id="turn"></span></h3>
+  <h2>Puntuación</h2>
+  <div id="result">
+      Jugador 1: <span id="jugador01"></span><br>
+      Jugador 2: <span id="jugador02"></span><br>
+  </div>
+  </center>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
